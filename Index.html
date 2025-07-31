@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ziuss Energy App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Ziuss Energy Dashboard</h1>
+    <div class="nav">
+      <button onclick="showSection('inventory')">Inventory</button>
+      <button onclick="showSection('jobs')">Jobs</button>
+      <button onclick="showSection('customers')">Customers</button>
+      <button onclick="showSection('reports')">Reports</button>
+    </div>
+
+    <div id="section-inventory" class="section"></div>
+    <div id="section-jobs" class="section" style="display:none"></div>
+    <div id="section-customers" class="section" style="display:none"></div>
+    <div id="section-reports" class="section" style="display:none"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
